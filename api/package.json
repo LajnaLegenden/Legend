@@ -14,7 +14,8 @@
         "start": "npm run serve",
         "test": "jest",
         "watch-ts": "tsc --watch",
-        "dev": "npm-run-all -p watch-ts nodemon"
+        "dev": "npm-run-all -p watch-ts nodemon",
+        "download": "npm install"
     },
     "dependencies": {
         "@types/lodash": "^4.14.164",
