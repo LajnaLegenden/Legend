@@ -9,6 +9,7 @@
         "start": "npm-run-all -p electron:start api:start",
         "dev": "npm-run-all -p electron:dev  api:dev",
         "test": "npm-run-all -p electron:test api:test",
+        "build": "npm-run-all -p electron:build api:build",
         "api:start": "npm start --prefix ./api",
         "api:dev": "npm run dev --prefix ./api",
         "api:test": "echo No tests created for api && exit 0",
