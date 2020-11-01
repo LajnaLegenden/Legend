@@ -1,0 +1,24 @@
+{
+    "name": "legend",
+    "version": "1.0.0",
+    "repository": "git@github.com:LajnaLegenden/Legend.git",
+    "author": "Lajna",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "start": "npm-run-all -p electron:start api:start",
+        "dev": "npm-run-all -p electron:dev  api:dev",
+        "test": "npm-run-all -p electron:test api:test",
+        "api:start": "npm start --prefix ./api",
+        "api:dev": "npm run dev --prefix ./api",
+        "api:test": "echo No tests created for api && exit 0",
+        "api:build": "npm run build --prefix ./api",
+        "electron:dev": "npm start --prefix ./app",
+        "electron:test": "npm run test:watch --prefix ./app",
+        "electron:start": "npm start --prefix ./app",
+        "electron:build": "npm run build --prefix ./app"
+    },
+    "devDependencies": {
+        "npm-run-all": "^4.1.5"
+    }
+}
