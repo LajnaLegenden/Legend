@@ -1,0 +1,6 @@
+<div>
+    <img [src]="getGameIconSrc(game)" [alt]="game.name">
+    <p>{{game.name}} - {{getPlayTime(game.playtime_forever)}}</p>
+    <button *ngIf="game.installed" (click)="launchGame(game)">Play</button>
+    <button *ngIf="!game.installed" (click)="installGame(game)">Install</button>
+</div>

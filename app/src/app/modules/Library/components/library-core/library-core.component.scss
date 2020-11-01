@@ -1,0 +1,16 @@
+main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+}
+
+#gameList {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+#gameDetails {
+    grid-area: 1 / 2 / 2 / 3;
+}
