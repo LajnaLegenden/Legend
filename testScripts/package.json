@@ -1,0 +1,13 @@
+{
+  "name": "testScripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "axios-cookiejar-support": "^1.0.1",
+    "got": "^11.8.0",
+    "tough-cookie": "^4.0.0",
+    "util": "^0.12.3"
+  }
+}

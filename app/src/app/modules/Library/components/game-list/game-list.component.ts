@@ -21,7 +21,8 @@ export class GameListComponent implements OnInit, OnChanges {
 
   ngOnChanges(): void {
     if(this.games){
-      this.games = this.games.sort(function (a, b) {
+      console.log(this.games)
+      /* this.games = this.games.sort(function (a, b) {
         if (a.playtime_forever < b.playtime_forever) {
           return 1;
         }
@@ -30,7 +31,7 @@ export class GameListComponent implements OnInit, OnChanges {
         }
         return 0;
       }
-    );
+    ); */
     }
 }
 

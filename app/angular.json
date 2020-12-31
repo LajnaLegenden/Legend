@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "Legend": {
+        "legend-electron": {
             "root": "",
             "sourceRoot": "src",
             "projectType": "application",
@@ -78,17 +78,17 @@
                 "serve": {
                     "builder": "@angular-builders/custom-webpack:dev-server",
                     "options": {
-                        "browserTarget": "angular-electron:build"
+                        "browserTarget": "legend-electron:build"
                     },
                     "configurations": {
                         "dev": {
-                            "browserTarget": "angular-electron:build:dev"
+                            "browserTarget": "legend-electron:build:dev"
                         },
                         "web": {
-                            "browserTarget": "angular-electron:build:web"
+                            "browserTarget": "legend-electron:build:web"
                         },
                         "production": {
-                            "browserTarget": "angular-electron:build:production"
+                            "browserTarget": "legend-electron:build:production"
                         }
                     }
                 },

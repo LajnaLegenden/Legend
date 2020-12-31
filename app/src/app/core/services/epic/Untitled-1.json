@@ -1,0 +1,109 @@
+interface Entitlement {
+    id: string;
+    namespace: string;
+    entitlementName: string;
+    eulaIds: string[];
+    title: string;
+    description: string;
+    longDescription: string;
+    technicalDetails: string;
+    developer: string;
+    lastModifiedDate: string;
+    keyImages: KeyImage[];
+    categories: Category[];
+    releaseInfo: (ReleaseInfo | ReleaseInfo2)[];
+    customAttributes: CustomAttributes;
+    dlcItemList: DlcItemList[];
+    mainGameItem: DlcItemList;
+}
+
+interface DlcItemList {
+    namespace: string;
+    id: string;
+}
+
+interface CustomAttributes {
+    CanRunOffline ? : CanRunOffline;
+    PresenceID ? : CanRunOffline;
+    MonitorPresence ? : CanRunOffline;
+    'com.epicgames.app.developerName' ? : CanRunOffline;
+    CanSkipKoreanIdVerification ? : CanRunOffline;
+    FolderName ? : CanRunOffline;
+    SupportedPlatforms ? : CanRunOffline;
+    PresenceId ? : CanRunOffline;
+    UseAccessControl ? : CanRunOffline;
+    RequirementsJson ? : CanRunOffline;
+    'UE_4.21:RequirementsJson' ? : CanRunOffline;
+    'UE_4.15:RequirementsJson' ? : CanRunOffline;
+    'UE_4.13:RequirementsJson' ? : CanRunOffline;
+    'UE_4.17:RequirementsJson' ? : CanRunOffline;
+    'UE_4.11:RequirementsJson' ? : CanRunOffline;
+    'UE_4.19:RequirementsJson' ? : CanRunOffline;
+    'UE_4.14:RequirementsJson' ? : CanRunOffline;
+    'UE_4.20:RequirementsJson' ? : CanRunOffline;
+    'UE_4.22:RequirementsJson' ? : CanRunOffline;
+    'UE_4.12:RequirementsJson' ? : CanRunOffline;
+    AllowMultipleInstances ? : CanRunOffline;
+    'UE_4.16:RequirementsJson' ? : CanRunOffline;
+    'UE_MagicLeapEA:RequirementsJson' ? : CanRunOffline;
+    'UE_4.18:RequirementsJson' ? : CanRunOffline;
+    CloudSaveFolder ? : CanRunOffline;
+    MaxSizeMB ? : CanRunOffline;
+    CloudExcludeList ? : CanRunOffline;
+    CloudSaveFolder_MAC ? : CanRunOffline;
+    CloudIncludeList ? : CanRunOffline;
+    ProcessNames ? : CanRunOffline;
+    MainWindowProcessName ? : CanRunOffline;
+    NeverUpdate ? : CanRunOffline;
+    partnerLinkType ? : CanRunOffline;
+    partnerLinkId ? : CanRunOffline;
+    availableDate ? : CanRunOffline;
+    neverUpdate ? : CanRunOffline;
+    NotarizedAndSigned ? : CanRunOffline;
+    OwnershipToken ? : CanRunOffline;
+    DisablePresenceWhileRunning ? : CanRunOffline;
+    'com.epicgames.app.offerNs' ? : CanRunOffline;
+    'com.epicgames.portal.product.privacyPolicyUrl' ? : CanRunOffline;
+    LaunchSocialOnFirstInstall ? : CanRunOffline;
+    AppAccessType ? : CanRunOffline;
+    'com.epicgames.portal.product.websiteUrl' ? : CanRunOffline;
+    HasGateKeeper ? : CanRunOffline;
+    RegistryPath ? : CanRunOffline;
+    ThirdPartyManagedApp ? : CanRunOffline;
+    AdditionalCommandline ? : CanRunOffline;
+    RegistryLocation ? : CanRunOffline;
+    RegistryKey ? : CanRunOffline;
+}
+
+interface CanRunOffline {
+    type: string;
+    value: string;
+}
+
+interface ReleaseInfo2 {
+    appId: string;
+    compatibleApps: any[];
+    platform: string[];
+    dateAdded: string;
+}
+
+interface ReleaseInfo {
+    appId: string;
+    compatibleApps: any[];
+    platform: string[];
+}
+
+interface Category {
+    name: string;
+    path: string;
+}
+
+interface KeyImage {
+    type: string;
+    url: string;
+    width: number;
+    height: number;
+    size: number;
+    uploadedDate: string;
+    md5: string;
+}
